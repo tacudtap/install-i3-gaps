@@ -13,4 +13,6 @@ mkdir -p build && cd build/
 ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make
 sudo make install
+rm ~/.bashrc
+mv ~/.bashrc.bak ~/.bashrc
 sudo reboot
